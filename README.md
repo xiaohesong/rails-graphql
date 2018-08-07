@@ -1,24 +1,20 @@
-# README
+> env
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```shell
+rails 5.2.0
+ruby 2.5.1
+```
 
-Things you may want to cover:
+> start
 
-* Ruby version
+```shell
+git clone git@github.com:xiaohesong/rails-graphql.git
+cp -r config/database.yml.example config/database.yml
+bundle
+rake db:create db:migrate db:seed
+rails s -p 3003
+```
 
-* System dependencies
+启动之后，在浏览器输入`http://localhost:3003/graphiql`,可以查看doc进行操作。
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+也可以配合[客户端(react)](https://github.com/xiaohesong/github-graphql/blob/apollo-client/README.md)进行操作
