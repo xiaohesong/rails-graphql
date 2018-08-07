@@ -6,12 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Movie.create(
-  title: ‘Deadly Weapon’,
-  description: ‘2 retired monks walk into a bar’
-)
+Movie.create({
+  title: 'Deadly Weapon',
+  description: '2 retired monks walk into a bar'
+})
 
-Movie.create(
-  title: ‘Deadly Weapon 2 — This time time it’s personal’,
-  description: ‘Like Deadly Weapon, only deadlier and more personal’
-)
+Movie.create({
+  title: 'Deadly Weapon 2 — This time time it’s personal',
+  description: 'Like Deadly Weapon, only deadlier and more personal'
+})
