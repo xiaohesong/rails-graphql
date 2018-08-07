@@ -14,6 +14,7 @@ class Resolvers::CreateMovie < GraphQL::Function
     Movie.create!(
       description: args[:description],
       title: args[:title],
+      user: _ctx[:current_user]
     )
   end
 end
